@@ -1,8 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
+```
+Name                : Sam Israel D
+Roll no             : 212222230128
+Date of experiment  : 21/08/2024
+```
 
 
 
@@ -78,25 +79,101 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
+```assembly
+org 100h
+MOV al,11h;
+MOV bl,20h;
+ADD al,bl;
+MOV [6379h],al;
+ret
+```
 
 
 ## Output  
+![img](./images/add.png)
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
+```assembly
+org 100h
+MOV al,20h;
+MOV bl,[8778h];
+SUB bl,al;
+MOV [8798h],bl;
+ret
+```
 ## Output  
+![img](./images/sub.png)
 ## Multiplication alp 
- ## Output  
-
+```assembly
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6063h],bl;
+ret
+```
+## Output  
+![img](./images/mul.png)
 
 ## Division alp 
-
+```assembly
+org 100h
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+ret
+```
 ## Output  
+![img](./images/div.png)
 
+## OR Operation
+```assembly
+org 100H  
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
+```
+## Output  
+![img](./images/or.png)
+## AND Operation
+```assembly
+org 100H  
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX; 
+ret
+```
+## Output
+![img](./images/and.png)
+## XOR Operation
+```assembly
+org 100H  
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H; 
+XOR AX,BX;  
+ret 
+```
+## Output
+![img](./images/xor.png)
 
+## NOT Operation
+```assembly
+org 100H  
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX; 
+MOV [SI+6],AX;
+ret 
+```
+## Output
+![img](./images/not.png)
 ## Result :
- 
+Thus, ALP for fundamental arithmetic and logical operations have been executed successfully.
 
 
 
